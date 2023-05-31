@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* child selector
+        ul>li{
+         color:blueviolet;
+         font-weight: bold;
+         
+        } */
+      /*-----------------------------*/
+      /* descendant selector
+        ul li{
+            color: red;
+            font-style: italic;
+        } */
+      /*--------------------------------------*/
+      /* adjacent sibing selector */
+      /* div+p{
+           color: orange; 
+        } */
+      /* general sibling selectors */
+      div ~ p {
+        color: green;
+      }
+      /* .tag~p{
+            color:aqua;
+        } */
+    </style>
+  </head>
+  <body>
+    <!-- selectors
+    1.simple selectors ----  name, class, id
+   
+    2.combinators 
+    descendant(space) --eg: div p --selects all p inside of div
+    child selector(>)---eg: div>p  -- selects only direct child p inside div
+    adjacent sibling selector div+p--selects element that is imediately after specified element 
+    general sibling selector div~p -- div+p select all sibling element after the specified
+     3.pseudo - class selector --based on certain state of the element like nth child, visited state, hover of a tag
+     4.pseudo-element selector-- selects and style part of element like first letter , first line, 
+     adding given content after and before elements
+-->
+    <!-- <div>
+        <p>child of first div</p>
+        <div>
+            <p>chlid of second div</p>
+        </div>
+    </div>
+
+    <h1>direct child selector</h1>
+    
+    <ul>
+        <li>direct child 1</li>
+        <ol>
+            <li>not direct child</li>
+            <li>not direct child</li>
+        </ol>
+        <li>direct child 2</li>
+        <li>direct child 3</li>
+    </ul> -->
+    <!-- <h1>descendant selector</h1>
+    <ul>
+        <li>direct child 1</li>
+        <ol>
+            <li>not direct child</li>
+            <li>not direct child</li>
+        </ol>
+        <li>direct child 2</li>
+        <li>direct child 3</li>
+    </ul> -->
+    <!-- <h1>adjacent sibling selector</h1>
+    <div>
+        <p>child (inside)</p>
+        <p>child (inside)</p>
+    </div>
+    <p>sibling1(immediate)</p>
+    <p>sibling 2</p>
+    <p>sibling 3</p>
+    <div>
+        <h3>heading</h3>
+    </div>
+    <p>immediate</p>
+    <h3>heading (sibling)</h3>
+    <p>sibling</p> -->
+
+    <h1>general sibling selector</h1>
+    <p>hi</p>
+    <div class="tag">
+      <p>child (inside)</p>
+      <p>child (inside)</p>
+    </div>
+    <p>sibling1(immediate)</p>
+    <p>sibling 2</p>
+    <p>sibling 3</p>
+    <div>
+      <h3>heading</h3>
+    </div>
+    <p>immediate</p>
+    <h3>heading (sibling)</h3>
+    <p>sibling</p>
+  </body>
+</html>

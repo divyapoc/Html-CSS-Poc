@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wrap properties</title>
+  </head>
+  <style>
+    body {
+      margin: 40px;
+    }
+
+    .c1 {
+      background-color: rgb(73, 216, 73);
+    }
+    .c2 {
+      background-color: rgb(248, 77, 77);
+    }
+    .c3 {
+      background-color: rgb(165, 53, 209);
+      height: 150px;
+    }
+    .c4 {
+      background-color: rgb(243, 202, 126);
+    }
+    .c5 {
+      background-color: aqua;
+    }
+    .c6 {
+      background-color: rgb(14, 182, 182);
+    }
+    .c8 {
+      background-color: rgb(75, 75, 241);
+      /* padding-top: 20px; */
+    }
+    .c7 {
+      background-color: yellow;
+    }
+    .container {
+      background-color: rgb(180, 179, 182);
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      flex-wrap: nowrap;
+
+      align-items: flex-start;
+      padding: 20px;
+    }
+    .container2 {
+      display: flex;
+      background-color: rgb(175, 175, 175);
+      font-size: 20px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      /* flex-flow: row-reverse wrap; */
+    }
+    .container3 {
+      display: flex;
+      background-color: rgb(177, 179, 179);
+      font-size: 20px;
+      align-items: flex-start;
+      flex-wrap: wrap-reverse;
+    }
+    .cd1,
+    .cd6,
+    .cd11 {
+      background-color: red;
+    }
+    .cd2,
+    .cd7,
+    .cd12 {
+      background-color: green;
+    }
+    .cd3,
+    .cd8,
+    .cd13 {
+      background-color: blueviolet;
+    }
+    .cd4,
+    .cd9,
+    .cd14 {
+      background-color: rgb(101, 184, 223);
+    }
+    .cd5,
+    .cd10,
+    .cd15 {
+      background-color: rgb(173, 82, 125);
+    }
+    .cd6 {
+      background-color: rgb(21, 131, 94);
+    }
+  </style>
+  <body>
+    <h3>
+      1.No warp - default (items laid out on single line even it overflow the
+      container)
+    </h3>
+    <div class="container">
+      <div class="c1 c">1.HTML</div>
+      <div class="c2 c">2.HTML</div>
+      <div class="c3 c">3.CSS</div>
+      <div class="c4 c">4.ARE</div>
+      <div class="c5 c">5.AMAZING</div>
+      <div class="c6 c">6.LANGUAGES</div>
+      <div class="cd1">box 1</div>
+      <div class="cd2">box 2</div>
+      <div class="cd3">box 3</div>
+      <div class="cd4">box 4</div>
+      <div class="cd5">box 5</div>
+      <div class="cd6">box 6</div>
+      <div class="cd7">box 7</div>
+      <div class="cd8">box 8</div>
+      <div class="cd9">box 9</div>
+      <div class="cd10">box 10</div>
+      <div class="cd11">box 11</div>
+      <div class="cd12">box 12</div>
+      <div class="cd13">box 13</div>
+      <!-- <div class="cd14">box 14</div> -->
+    </div>
+    <h3>
+      2.wrap- Force flex-items into multiple lines inside container(prevent
+      overflow)
+    </h3>
+    <div class="container2">
+      <div class="c1 c">1.HTML</div>
+      <div class="c2 c">2.HTML</div>
+      <div class="c3 c">3.CSS</div>
+      <div class="c4 c">4.ARE</div>
+      <div class="c5 c">5.AMAZING</div>
+      <div class="c6 c">6.LANGUAGES</div>
+      <div class="cd1">box 1</div>
+      <div class="cd2">box 2</div>
+      <div class="cd3">box 3</div>
+      <div class="cd4">box 4</div>
+      <div class="cd5">box 5</div>
+      <div class="cd6">box 6</div>
+      <div class="cd7">box 7</div>
+      <div class="cd8">box 8</div>
+      <div class="cd9">box 9</div>
+      <div class="cd10">box 10</div>
+      <div class="cd11">box 11</div>
+      <div class="cd12">box 12</div>
+      <div class="cd13">box 13</div>
+      <div class="cd14">box 14</div>
+    </div>
+    <h3>3.wrap-reverse- same as wrap but start and end are premuted</h3>
+    <div class="container3">
+      <div class="c1 c">1.HTML</div>
+      <div class="c2 c">2.HTML</div>
+      <div class="c3 c">3.CSS</div>
+      <div class="c4 c">4.ARE</div>
+      <div class="c5 c">5.AMAZING</div>
+      <div class="c6 c">6.LANGUAGES</div>
+      <div class="cd1">box 1</div>
+      <div class="cd2">box 2</div>
+      <div class="cd3">box 3</div>
+      <div class="cd4">box 4</div>
+      <div class="cd5">box 5</div>
+      <div class="cd6">box 6</div>
+      <div class="cd7">box 7</div>
+      <div class="cd8">box 8</div>
+      <div class="cd9">box 9</div>
+      <div class="cd10">box 10</div>
+      <div class="cd11">box 11</div>
+      <div class="cd12">box 12</div>
+      <div class="cd13">box 13</div>
+      <div class="cd14">box 14</div>
+    </div>
+  </body>
+</html>

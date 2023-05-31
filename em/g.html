@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid</title>
+  </head>
+  <!-- First it will deduct the grid gap from total width and then calculate the proportion. -->
+  <style>
+    .c1 {
+      background-color: rgb(73, 216, 73);
+    }
+    .c2 {
+      background-color: rgb(248, 77, 77);
+    }
+    .c3 {
+      background-color: rgb(146, 41, 187);
+      height: 150px;
+    }
+    .c4 {
+      background-color: rgb(243, 202, 126);
+    }
+    .c5 {
+      background-color: aqua;
+    }
+    .c6 {
+      background-color: rgb(14, 182, 182);
+    }
+    .c8 {
+      background-color: rgb(75, 75, 241);
+      grid-column: 2 / -1;
+      grid-row: 1 / 4;
+    }
+    .c7 {
+      background-color: yellow;
+    }
+    .container {
+      background-color: rgb(0, 0, 0);
+      margin: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      display: grid;
+      /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+      grid-template-columns: repeat(4, 1fr);
+      /* grid-template-columns: 25% 25% 25% 25%; */
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+
+      /* height: 500px; */
+      /* row-gap: 20px;
+      column-gap: 10px; */
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="c1 c">1.HTML</div>
+      <div class="c2 c">2.and</div>
+      <div class="c3 c">3.CSS</div>
+      <div class="c4 c">4.ARE</div>
+      <div class="c5 c">5.AMAZING</div>
+      <div class="c6 c">6.LANGUAGES</div>
+      <div class="c7 c">7.to</div>
+      <div class="c8 c">8.learn</div>
+    </div>
+  </body>
+</html>

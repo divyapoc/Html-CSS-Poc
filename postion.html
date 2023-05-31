@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+    <!-- static
+    relative
+    absolute
+    fixed
+    sticky -->
+  </head>
+  <style>
+    .parent {
+      background-color: pink;
+      padding: 10px;
+      margin-top: 10px;
+      position: relative;
+      height: 2000px;
+    }
+    .child1 {
+      background-color: red;
+      padding: 10px;
+      /* position: sticky;
+      top: 0; */
+
+      /* top: 0px; */
+      /* bottom: 0px; */
+      /* top: 20px; */
+      /* top: 20px;
+      left: 20px;
+      bottom: 10px; */
+    }
+    .child2 {
+      background-color: green;
+      padding: 10px;
+    }
+    .child3 {
+      background-color: orange;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+    }
+    /* .ancester {
+      margin-top: 30px;
+      background-color: aqua;
+      position: relative;
+      padding: 50px;
+    } */
+  </style>
+  <body>
+    <div class="ancester">
+      <div class="parent">
+        parent
+        <div class="child1">first</div>
+        <div class="child2">second</div>
+        <div class="child3">third</div>
+      </div>
+    </div>
+  </body>
+</html>

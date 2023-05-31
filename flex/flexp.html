@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align-items</title>
+  </head>
+  <style>
+    body {
+      margin: 40px;
+    }
+    .c1 {
+      background-color: rgb(73, 216, 73);
+    }
+    .c2 {
+      background-color: rgb(248, 77, 77);
+    }
+    .c3 {
+      background-color: rgb(212, 135, 243);
+
+      height: 150px;
+    }
+    .c4 {
+      background-color: rgb(243, 202, 126);
+    }
+    .c5 {
+      background-color: aqua;
+    }
+    .c6 {
+      background-color: rgb(14, 182, 182);
+    }
+    .c8 {
+      background-color: rgb(75, 75, 241);
+    }
+    .c7 {
+      background-color: rgb(184, 184, 15);
+    }
+    .c {
+      /* flex-grow: 0 default
+          flex-shrink: 1 default
+          flex-bais: auto */
+      flex: 0 1 150px;
+    }
+    /* 2.center */
+    .container {
+      background-color: rgb(181, 182, 180);
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+  </style>
+  <body>
+    <h1>Flex-property(flex grow , flex-shrink, flex basis)</h1>
+
+    <h3>default flex grow -0 , flex-shrink-1, flex basis-auto</h3>
+
+    <div class="container">
+      <div class="c1 c">1.HTML</div>
+      <div class="c2 c">2.HTML</div>
+      <div class="c3 c">3.CSS</div>
+      <div class="c4 c">4.ARE</div>
+      <div class="c5 c">5.AMAZING</div>
+      <div class="c6 c">6.LANGUAGES</div>
+    </div>
+  </body>
+</html>

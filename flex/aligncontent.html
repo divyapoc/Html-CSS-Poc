@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align-content</title>
+  </head>
+  <style>
+    body {
+      margin: 40px;
+    }
+    .c1 {
+      background-color: rgb(73, 216, 73);
+    }
+    .c2 {
+      background-color: rgb(248, 77, 77);
+    }
+    .c3 {
+      background-color: rgb(165, 53, 209);
+      height: 150px;
+    }
+    .c4 {
+      background-color: rgb(243, 202, 126);
+    }
+    .c5 {
+      background-color: aqua;
+    }
+    .c6 {
+      background-color: rgb(14, 182, 182);
+    }
+    .c8 {
+      background-color: rgb(75, 75, 241);
+    }
+    .c7 {
+      background-color: rgb(240, 240, 97);
+    }
+    .cd1,
+    .cd3 {
+      background-color: rgb(230, 41, 41);
+      padding: 10px;
+    }
+    .cd2,
+    .cd7 {
+      background-color: rgb(90, 133, 49);
+      padding: 10px;
+    }
+    .cd4,
+    .cd6 {
+      background-color: rgb(195, 214, 22);
+      padding: 10px;
+    }
+    .cd5,
+    .cd8 {
+      background-color: rgb(60, 78, 156);
+      padding: 10px;
+      height: 150px;
+    }
+    .container {
+      display: flex;
+      background-color: rgb(47, 47, 48);
+      font-size: 22px;
+      flex-wrap: wrap;
+
+      padding: 20px;
+      gap: 20px;
+      align-content: center;
+      align-items: center;
+
+      /* align-content- stretch
+      align-items- stretch */
+      height: 700px;
+      /* align-content: center; */
+      /* align-items: flex-start; */
+    }
+
+    /*align-item*/
+    .container2 {
+      display: none;
+      background-color: rgb(56, 56, 56);
+      font-size: 22px;
+      flex-wrap: wrap;
+      align-items: center;
+      height: 600px;
+      /* align-items: flex-start; */
+    }
+  </style>
+  <body>
+    <h3>
+      align-content (works on wrap mode(multiple line)[how flex lines are
+      positioned along the Cross-axis])
+    </h3>
+    <div class="container">
+      <div class="c1 c">1.HTML</div>
+      <div class="c2 c">2.HTML</div>
+      <div class="c3 c">3.CSS</div>
+      <div class="c4 c">4.ARE</div>
+      <div class="c5 c">5.AMAZING</div>
+      <div class="cd1">box 1</div>
+      <div class="cd2">box 2</div>
+      <div class="cd3">box 3</div>
+      <div class="cd4">box 4</div>
+      <div class="cd5">box 5</div>
+      <div class="cd6">box 6</div>
+      <!-- <div class="cd7">box 7</div>
+      <div class="cd8">box 8</div> -->
+    </div>
+    <h3>
+      2.align-items ---determine how flex items are positioned within a flex
+      lines
+    </h3>
+    <div class="container2">
+      <div class="c1 c">1.HTML</div>
+      <div class="c2 c">2.HTML</div>
+      <div class="c3 c">3.CSS</div>
+      <div class="c4 c">4.ARE</div>
+      <div class="c5 c">5.AMAZING</div>
+      <div class="cd1">box 1</div>
+      <div class="cd2">box 2</div>
+      <div class="cd3">box 3</div>
+      <div class="cd4">box 4</div>
+      <div class="cd5">box 5</div>
+      <div class="cd6">box 6</div>
+      <div class="cd7">box 7</div>
+      <div class="cd8">box 8</div>
+    </div>
+  </body>
+</html>

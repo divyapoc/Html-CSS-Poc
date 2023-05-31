@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>grid alignment</title>
+    <style>
+      .parent {
+        background-color: rgb(24, 24, 24);
+        display: grid;
+        grid-template-columns: 120px 150px 120px;
+        grid-template-rows: 250px 100px;
+        gap: 20px;
+        height: 600px;
+        width: 600px;
+        /* align-content: center;
+        justify-content: center; */
+        /* place-content: align content justify-content ; */
+        place-content: center;
+        /* align-items: center;
+        justify-items: center; */
+        place-items: center;
+      }
+      .c1 {
+        background-color: rgb(73, 216, 73);
+      }
+
+      .c2 {
+        background-color: rgb(248, 77, 77);
+        /* align-self: end;
+        justify-self: end; */
+        place-self: end;
+      }
+      .c3 {
+        background-color: rgb(212, 135, 243);
+        height: 150px;
+        /* justify-self: stretch; */
+      }
+      .c4 {
+        background-color: rgb(243, 202, 126);
+        font-size: 35px;
+      }
+      .c5 {
+        background-color: aqua;
+      }
+      .c6 {
+        background-color: rgb(14, 182, 182);
+      }
+      .c8 {
+        background-color: rgb(75, 75, 241);
+      }
+      .c7 {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="c1 C">1.htmL</div>
+      <div class="c2 C">2.AND</div>
+      <div class="c3 C">3.CSS</div>
+      <div class="c4 C">4.ARE</div>
+      <div class="c5 C">5.AMAZING</div>
+      <div class="c6 C">6.LANGUAGES</div>
+      <!-- <div class="c7 C">7.TO</div>
+      <div class="c8 C">8.LEARN</div> -->
+    </div>
+  </body>
+</html>

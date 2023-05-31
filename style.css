@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap");
+body {
+  font-family: sans-serif;
+}
+
+/* *{
+    font-family: sans-serif;
+    color: violet; 
+    border-top: 5px solid red;
+} */
+/* strong{
+    font-family: 'Times New Roman', Times, serif;
+} */
+/* h1,h2,h3,h4,p,li{
+    font-family: sans-serif;
+    
+} */
+
+h2,
+h3,
+h4 {
+  color: rgb(21, 165, 165);
+}
+h1 {
+  /* color: blue; */
+  font-size: 30px;
+  text-transform: lowercase;
+  font-style: italic;
+  color: rgb(5, 112, 119);
+}
+h2 {
+  font-size: 26px;
+  /* color: red; */
+}
+p,
+li {
+  font-size: 18px;
+}
+p {
+  /* 1.5 times font-size */
+  line-height: 1.5;
+  /* text-align: justify; */
+}
+h3 {
+  font-size: 25px;
+}
+h4 {
+  font-size: 20px;
+  text-align: center;
+}
+/* descendant selector */
+/* nested descendant selector - descedant inside descendant */
+/* footer div p{
+font-size: 15px;
+color:blue
+} */
+/* class and id selector */
+/* id selector */
+/* #contact{
+    font-size: 15px;
+    color:blue 
+} */
+#copy {
+  font-size: 15px;
+}
+.related-author {
+  color: rgb(118, 21, 131);
+}
+/* syntax for pseudo class selector */
+/* selector : pseudo-class{
+    property:value
+} */
+/* li:first-child{
+    color:red
+}
+li:last-child{
+    color:green;
+}
+li:nth-child(odd){
+    color:yellow
+} */
+/* article p:first-child{
+    color: orange;
+} */
+
+a:link {
+  color: rgb(28, 214, 214);
+  text-decoration: none;
+  font-size: 18px;
+}
+a:visited {
+  color: rgb(1, 151, 131);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+a:hover {
+  color: rgb(49, 0, 128);
+  font-size: 20px;
+}
+a:active {
+  background: black;
+  color: rgb(3, 128, 128);
+  text-decoration: none;
+}
+/* pseudo element selector */
+/* style specified part of element */
+/* syntax  */
+/* selector : pseudo-element{
+    property:value
+} */
+
+/* p::first-line{
+    font-style: italic;
+    color:rebeccapurple;
+    line-height: 3;
+
+}
+p::first-letter{
+    font-size:35px;
+    font-weight: bold;
+    color: red;
+}
+h1::before{
+    content: "😊";
+}
+h1::after{
+    content: "❤";
+    color: pink;
+}
+li::marker{
+    color: blue;
+    font-size: 25px;
+} */
+p#para {
+  text-indent: 50px;
+}
+/* css color */
+/* names
+rgb notation
+hexadecimal notation 
+hsl */
+
+/* layout
+float - outdated , used in olden days 
+flex - modern way of building one-dimensional layout( either row or column )
+grid - modern way of building two-dimensional layout (rows and columns) */
+
+/* float */
+
+/* .author-img {
+  float: left;
+}
+.author {
+  float: left;
+  margin-left: 20px;
+}
+.div1 {
+  clear: left;
+}
+
+header {
+  background-color: rgb(180, 180, 180);
+  padding: 10px;
+}
+h1 {
+  float: left;
+}
+nav a {
+  margin: 25px 10px;
+  display: inline-block;
+}
+nav {
+  float: right;
+}
+
+article {
+  clear: both;
+}
+.clear {
+  clear: both; 
+}*/
+
+/* clear-fix hack */
+
+/* .clear-fix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+aside {
+  border-top: solid 10px rgb(16, 175, 238);
+  border-bottom: solid 10px rgb(16, 175, 238);
+  background-color: rgb(201, 201, 201);
+  width: 350px;
+  float: right;
+  margin-top: 20px;
+}
+article {
+  background-color: rgb(139, 214, 243);
+  width: 850px;
+  margin-top: 20px;
+  float: left;
+}
+footer {
+  clear: both;
+} */
+
+/* flex */
+
+/* aside {
+  border-top: solid 10px rgb(16, 175, 238);
+  border-bottom: solid 10px rgb(16, 175, 238);
+  background-color: rgb(201, 201, 201);
+  flex-basis: 300px;
+}
+article {
+  background-color: rgb(139, 214, 243);
+  flex-basis: 800px;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+  gap: 80px;
+}
+header {
+  display: flex;
+  background-color: rgb(182, 182, 182);
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+/* ----------------------------------------------------------------------- */
+/* grid */
+
+aside {
+  border-top: solid 10px rgb(16, 175, 238);
+  border-bottom: solid 10px rgb(16, 175, 238);
+  background-color: rgb(201, 201, 201);
+  align-self: start;
+}
+
+footer {
+  background-color: rgb(24, 206, 206);
+  padding: 20px;
+  grid-column: 1 / span 2;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 20px 70px;
+  /* align-items: start; */
+}
+header {
+  background: rgb(197, 197, 197);
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a {
+  margin-right: 20px;
+}

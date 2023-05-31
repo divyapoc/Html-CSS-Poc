@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justify Content</title>
+  </head>
+  <style>
+    body {
+      margin: 40px;
+    }
+    .c1 {
+      background-color: rgb(73, 216, 73);
+    }
+    .c2 {
+      background-color: rgb(248, 77, 77);
+    }
+    .c3 {
+      background-color: rgb(212, 135, 243);
+
+      height: 150px;
+    }
+    .c4 {
+      background-color: rgb(243, 202, 126);
+    }
+    .c5 {
+      background-color: aqua;
+    }
+    .c6 {
+      background-color: rgb(14, 182, 182);
+    }
+    .c8 {
+      background-color: rgb(75, 75, 241);
+    }
+    .c7 {
+      background-color: rgb(184, 184, 15);
+    }
+    /* 1.flex-start */
+    .container {
+      background-color: rgb(181, 182, 180);
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      justify-content: flex-start;
+    }
+    /* 2.flex end */
+    .container1 {
+      background-color: rgb(181, 182, 180);
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      justify-content: flex-end;
+    }
+    /* 3.space-between  */
+    .container2 {
+      background-color: rgb(181, 182, 180);
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+    }
+    /* 4.space-evenly */
+    .container3 {
+      background-color: rgb(181, 182, 180);
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    /* space-around */
+    .container4 {
+      background-color: rgb(181, 182, 180);
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-around;
+    }
+    .container5 {
+      background-color: rgb(181, 182, 180);
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <h1>Justify content - align item across <strong>main axis</strong></h1>
+    <h3>default direction-row</h3>
+    <h2>1.flex-start(pushed to starting side) -default value</h2>
+    <div class="container">
+      <div class="c1 c">1.HTML</div>
+      <div class="c2 c">2.HTML</div>
+      <div class="c3 c">3.CSS</div>
+      <div class="c4 c">4.ARE</div>
+      <div class="c5 c">5.AMAZING</div>
+      <div class="c6 c">6.LANGUAGES</div>
+      <!-- <div class="c7 c">7.to</div>
+      <div class="c8 c">8.learn</div> -->
+    </div>
+    <h2>2.flex end(pushed to ending side)</h2>
+    <div class="container1">
+      <div class="c1 c">1.HTML</div>
+      <div class="c2 c">2.HTML</div>
+      <div class="c3 c">3.CSS</div>
+      <div class="c4 c">4.ARE</div>
+      <div class="c5 c">5.AMAZING</div>
+      <div class="c8 c">8.learn</div>
+      <!-- <div class="c7 c">7.to</div>
+      <div class="c6 c">6.LANGUAGES</div> -->
+    </div>
+    <h2>3.space-between (remaing space are evenly shared between items</h2>
+    <div class="container2">
+      <div class="c1 c">1.HTML</div>
+      <div class="c2 c">2.HTML</div>
+      <div class="c3 c">3.CSS</div>
+      <div class="c4 c">4.ARE</div>
+      <div class="c5 c">5.AMAZING</div>
+      <div class="c6 c">6.LANGUAGES</div>
+      <!-- <div class="c7 c">7.to</div>
+      <div class="c8 c">8.learn</div> -->
+    </div>
+    <h2>4.space-evenly (remaing space are evenly spread around items)</h2>
+    <div class="container3">
+      <div class="c1 c">1.HTML</div>
+      <div class="c2 c">2.HTML</div>
+      <div class="c3 c">3.CSS</div>
+      <div class="c4 c">4.ARE</div>
+      <div class="c5 c">5.AMAZING</div>
+      <div class="c6 c">6.LANGUAGES</div>
+      <!-- <div class="c7 c">7.to</div>
+      <div class="c8 c">8.learn</div> -->
+    </div>
+    <h2>5.space-around(space before, after and between the items)</h2>
+    <div class="container4">
+      <div class="c1 c">1.HTML</div>
+      <div class="c2 c">2.HTML</div>
+      <div class="c3 c">3.CSS</div>
+      <div class="c4 c">4.ARE</div>
+      <div class="c5 c">5.AMAZING</div>
+      <div class="c6 c">6.LANGUAGES</div>
+      <!-- <div class="c7 c">7.to</div>
+      <div class="c8 c">8.learn</div> -->
+    </div>
+    <h2>6.Center(align items in center across main axis)</h2>
+    <div class="container5">
+      <div class="c1 c">1.HTML</div>
+      <div class="c2 c">2.HTML</div>
+      <div class="c3 c">3.CSS</div>
+      <div class="c4 c">4.ARE</div>
+      <div class="c5 c">5.AMAZING</div>
+      <div class="c6 c">6.LANGUAGES</div>
+      <!-- <div class="c7 c">7.to</div>
+      <div class="c8 c">8.learn</div> -->
+    </div>
+  </body>
+</html>

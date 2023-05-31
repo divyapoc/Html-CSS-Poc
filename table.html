@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tables</title>
+  </head>
+  <style>
+    table {
+      width: 700px;
+      border: solid 1px #000;
+      border-collapse: collapse;
+      margin: auto;
+      margin-top: 200px;
+    }
+    th,
+    td {
+      border: solid 1px #000;
+      padding: 10px;
+      text-align: left;
+    }
+    thead {
+      background-color: rgb(221, 13, 82);
+      color: white;
+    }
+    thead th {
+      width: 25%;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: rgb(233, 189, 250);
+    }
+    tbody tr:nth-child(even) {
+      background-color: rgb(254, 218, 255);
+    }
+  </style>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>morning</th>
+          <th>afternoon</th>
+          <th>evening</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="odd">
+          <th>monday</th>
+          <td>science</td>
+          <td>maths</td>
+          <td>english</td>
+        </tr>
+        <tr class="even">
+          <th>tuesday</th>
+          <td>social</td>
+          <td>maths</td>
+          <td>english</td>
+        </tr>
+        <tr class="odd">
+          <th>wednesday</th>
+          <td>tamil</td>
+          <td>maths</td>
+          <td>english</td>
+        </tr>
+        <tr class="even">
+          <th>thursday</th>
+          <td>science</td>
+          <td>pt</td>
+          <td>english</td>
+        </tr>
+        <tr class="odd">
+          <th>friday</th>
+          <td>science</td>
+          <td>hindi</td>
+          <td>english</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

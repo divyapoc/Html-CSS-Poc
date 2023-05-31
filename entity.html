@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entity</title>
+</head>
+<body>
+    <p>
+        <!-- expression: a<b -->
+          <!--1. to display reserved characters in html like <,>,& because browser may interpret < as starting of tag -->
+          <!-- 2.to display invisible char - like nbsp-non breaking spaces(just spaces)
+               3.to display  characters that can't be displayed using normal keyboard like copyright symbol , currency etc -->
+         <!-- entity representation
+         &entity name;
+         &#entity number; has lot support in browser compared to entity name -->
+
+         expression a&lt;b <br>
+         expression a&#60;b
+
+    </p>
+    <p>Lorem ipsum dolor&ensp;sit amet consectetur, adipisicing elit.enim repellat fuga nostrum porro voluptate quas tempore?</p>
+    <p>copyright &copy;</p>
+</body>
+</html>

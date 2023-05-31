@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .parent {
+      background-color: pink;
+      /* padding: 20px; */
+    }
+
+    .child1 {
+      background-color: red;
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+      float: left;
+    }
+    .child2 {
+      background-color: green;
+      padding: 10px;
+      margin: 10px;
+      float: left;
+      width: 200px;
+    }
+    .child3 {
+      background-color: orange;
+      padding: 10px;
+      margin: 10px;
+      float: right;
+      width: 200px;
+    }
+    /* .clear {
+      clear: both;
+    } */
+    .clear-fix::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+  </style>
+  <body>
+    <div class="parent clear-fix">
+      <div class="child1">
+        first
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus culpa,
+          minus exercitationem esse dolores facere laborum nobis, sit architecto
+          ea enim non nam sed adipisci, temporibus iusto sunt! Mollitia, enim!
+        </p>
+      </div>
+      <div class="child2">
+        second
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus culpa,
+          minus exercitationem esse dolores facere laborum nobis, sit architecto
+          ea enim non nam sed adipisci, temporibus iusto sunt! Mollitia, enim!
+        </p>
+      </div>
+      <div class="child3">
+        third
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus culpa,
+          minus exercitationem esse dolores facere laborum nobis, sit architecto
+          ea enim non nam sed adipisci, temporibus iusto sunt! Mollitia, enim!
+        </p>
+      </div>
+      <!-- <div class="clear"></div> -->
+    </div>
+  </body>
+</html>

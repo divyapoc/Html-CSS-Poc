@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog post</title>
+    <style>
+  
+      /* h1{
+        color: aqua;
+        font-size: 20px;
+      }
+      div{
+        color: blueviolet;
+      }
+      p{
+        color:green;
+      } */
+     /* .container{
+      position: relative;
+     } */
+
+     /* button{
+      padding: 10px;
+      color: red;
+      position: absolute;
+      bottom: 5px;
+      right:5px
+     }
+     .div1{
+      display: inline-block;
+      position: relative;
+     } */
+    
+    </style>
+   <!-- structuring and semantic html  -->
+   <link  href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+
+      <header class="clear-fix">
+        <div>
+          <h1>Code Magazine</h1>
+        </div>
+            <nav>
+              <a href="#">blog</a>
+              <a href="#">challenge</a>
+              <a href="#">home</a>
+              <a href="#">about</a>
+              <a href="#">contact</a>
+            </nav>
+            <!-- <div class="clear"></div> -->
+          </header>
+            <!-- only for flex -->
+          <!-- <div class="parent"> -->
+  
+            <article>
+                <h2>The Basic Language of the Web : HTML</h2>
+                <img
+                    src="images/author.jpg"
+                    alt="author"
+                    width="60"
+                    height="60"
+                    class="author-img"
+                  />
+                  <p class='author'>
+                    posted by <strong>Laura Jones</strong>  on Monday,june 2020
+                    
+                  </p>
+               
+                  <div class="div1">
+                    <img
+                    src="./images/comp.jpg"
+                    alt="just an computer image"
+                    height="250px"
+                    width="500px" 
+                    class="img"
+                   
+                  />
+                  <!-- <button>❤ like</button> -->
+                  </div>
+                
+              <p>
+                All modern websites and web applications are built using three
+               fundamental technologies: HTML, CSS and JavaScript. These
+                are the languages of the web.
+              </p>
+              <p>
+                In this post, let's focus on HTML. We will learn what HTML is all
+                about, and why you too should learn it.
+              </p>
+              <h3>What is HTML?</h3>
+              <p id="para">
+                HTML stands for <em>Hyper Text Markup Language</em> . It's a markup language
+                that web developers use to structure and describe the content of a
+                webpage (not a programming language). HTML consists of elements that
+                describe different types of content: paragraphs, links, headings,
+                images, video, etc. Web browsers understand HTML and render HTML
+                code as websites.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae distinctio dicta deserunt autem iste laudantium quos voluptatibus excepturi possimus adipisci odit tempora, nihil fugit saepe quia quam, accusantium, in nam.
+              </p>
+              
+              <p>In HTML, each element is made up of 3 parts:</p>
+              <ol>
+                <li >The opening tag</li>
+                <li>The closing tag</li>
+                <li>The actual element</li>
+              </ol>
+              <p>
+                you can learn more at
+                <a href="https://developer.mozilla.org/en-US/" 
+                  >MDN WEB DOCS</a
+                >
+              </p>
+              <h3>Why should you learn HTML?</h3>
+              <p>
+                There are countless reasons for learning the fundamental language of
+                the web. Here are 5 of them:
+              </p>
+              <ul>
+                <li >
+                  To be able to use the fundamental web dev language
+                </li>
+                <!-- <li>
+                  To hand-craft beautiful websites instead of relying on tools like
+                  Worpress or Wix
+                </li>
+                <li>To build web applications</li> -->
+              </ul>
+              <p>Hopefully you learned you something new here.See you next time</p>
+            </article>
+            <aside>
+              <h4>Related post</h4>
+              <ul >
+                <li >
+                  <img src="images/web.jpg" alt="web" width="100" height="100" />
+                     <a href="#"  >how to learn web development<a>
+                    <p class="related-author">By Jones Schmedman</p>
+                </li>
+                <li >
+                  <img src="./images/css.jpg" alt="css" width="100" height="100" />
+                    <a href="#" >the unknown power of css </a>
+                    <p class="related-author">By Jin Dilon</p>
+                </li>
+                <li >
+                  <img src="./images/js.jpg" alt="javascript" width="100" height="100" />
+                    <a href="#" >why javascript is awesome </a>
+                    <p class="related-author" >By Malika</p>
+                </li>
+              </ul>
+            </aside>
+          <!-- </div> -->
+            <footer>
+              <p id="copy">This under copyright 2022</p>
+              <!-- <div id="contact">
+                <p>contact information: 1200-33-44</p>
+                <p>divya@gmail.com</p>
+              </div> -->
+            </footer>
+    </div>
+        
+  </body>
+</html>

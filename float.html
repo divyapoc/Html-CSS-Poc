@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: rgb(176, 99, 248);
+      margin-bottom: 20px;
+    }
+    h1 {
+      float: left;
+      color: aliceblue;
+      margin-left: 50px;
+    }
+    nav {
+      float: right;
+    }
+    nav a {
+      display: inline-block;
+      margin: 20px 20px;
+      background-color: rgb(190, 63, 63);
+      padding: 5px;
+    }
+    nav a:link {
+      text-decoration: none;
+      color: bisque;
+    }
+    .clear-fix::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+    .container {
+      background-color: pink;
+      padding: 30px;
+    }
+    /* clear fix hack */
+    .clear-fix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .con-2 {
+      width: 700px;
+      float: left;
+      padding: 30px;
+    }
+    .sec-3 {
+      width: 400px;
+      float: right;
+      background-color: rgb(231, 71, 151);
+      padding: 20px;
+    }
+    footer {
+      margin-top: 20px;
+      background-color: aqua;
+      padding: 20px;
+      /* clear: both; */
+    }
+    .sec-2 {
+      background-color: rgb(180, 41, 207);
+      margin-top: 30px;
+      padding: 20px;
+    }
+    .sec-1 {
+      background-color: rgb(28, 161, 161);
+      padding: 20px;
+    }
+    p {
+      margin: 10px 0;
+    }
+    h2 {
+      margin: 10px 0;
+    }
+    h1 {
+      margin: 10px 0;
+    }
+  </style>
+  <body>
+    <header class="clear-fix">
+      <h1>Float layout</h1>
+      <nav>
+        <a href="#">blog</a>
+        <a href="#">challenge</a>
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+      </nav>
+    </header>
+
+    <div class="container clear-fix">
+      <div class="con-2">
+        <section class="sec-1">
+          <h2>sub-heading</h2>
+          <p>
+            floated element will be removed from the document and surrounding
+            inline and text will float around it
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
+            quasi vero veritatis rerum ea placeat itaque eaque accusantium et
+            iusto, necessitatibus, aliquam eos veniam ipsam dignissimos!
+            Dignissimos eligendi explicabo distinctio.
+          </p>
+        </section>
+        <section class="sec-2">
+          <h2>section 2</h2>
+
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
+            quasi vero veritatis rerum ea placeat itaque eaque accusantium et
+            iusto, necessitatibus, aliquam eos veniam ipsam dignissimos!
+            Dignissimos eligendi explicabo distinctio.
+          </p>
+        </section>
+      </div>
+      <section class="sec-3">
+        <h2>section 3</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, aliquid, tempora a tempore enim alias sequi atque quae
+          quam ipsa adipisci laborum nostrum delectus sint voluptas beatae ipsam
+          quisquam! Rerum.
+        </p>
+
+        <img src="./images/css.jpg" width="200" height="200" />
+      </section>
+    </div>
+    <footer>
+      <p>contact:</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse laborum
+        minima soluta alias, aspernatur saepe, neque vel molestiae quibusdam ex
+        eveniet nulla, quaerat veniam aliquid. Recusandae iste sit fugiat fugit!
+      </p>
+    </footer>
+  </body>
+</html>

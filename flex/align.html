@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align-items</title>
+  </head>
+  <style>
+    body {
+      margin: 40px;
+    }
+    .c1 {
+      background-color: rgb(73, 216, 73);
+    }
+    .c2 {
+      background-color: rgb(248, 77, 77);
+    }
+    .c3 {
+      background-color: rgb(212, 135, 243);
+
+      height: 150px;
+    }
+    .c4 {
+      background-color: rgb(243, 202, 126);
+    }
+    .c5 {
+      background-color: aqua;
+      align-self: flex-start;
+    }
+    .c6 {
+      background-color: rgb(14, 182, 182);
+    }
+    .c8 {
+      background-color: rgb(75, 75, 241);
+    }
+    .c7 {
+      background-color: rgb(184, 184, 15);
+    }
+    /* 1.stretch */
+    .container {
+      background-color: rgb(181, 182, 180);
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      align-items: stretch;
+    }
+    /* 2.center */
+    .container1 {
+      background-color: rgb(181, 182, 180);
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+    /* 3.flex end */
+
+    .container2 {
+      background-color: rgb(181, 182, 180);
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      align-items: flex-end;
+    }
+    /* 4.flex-start */
+    .container3 {
+      background-color: rgb(181, 182, 180);
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      align-items: flex-start;
+    }
+    /* 5.baseline */
+    .container4 {
+      background-color: rgb(181, 182, 180);
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      align-items: baseline;
+    }
+    .cd1 {
+      background-color: rgb(73, 216, 73);
+      /* padding: 30px; */
+    }
+    .cd2 {
+      background-color: rgb(248, 77, 77);
+
+      /* font-size: 50px; */
+    }
+    .cd3 {
+      background-color: rgb(212, 135, 243);
+
+      height: 150px;
+    }
+    .cd4 {
+      background-color: rgb(243, 202, 126);
+      /* padding-top: 10px; */
+    }
+    .cd5 {
+      background-color: aqua;
+
+      /* font-size: 10px; */
+    }
+    .cd6 {
+      background-color: rgb(14, 182, 182);
+    }
+  </style>
+  <body>
+    <h1>Align-items - align item across <strong>across axis</strong></h1>
+    <h3>default vertical</h3>
+    <h2>1.stretch (all items height are stretched to tallest sibling) -default value</h2>
+    <div class="container">
+      <div class="c1 c">1.HTML</div>
+      <div class="c2 c">2.HTML</div>
+      <div class="c3 c">3.CSS</div>
+      <div class="c4 c">4.ARE</div>
+      <div class="c5 c">5.AMAZING</div>
+      <div class="c6 c">6.LANGUAGES</div>
+      <!-- <div class="c7 c">7.to</div>
+      <div class="c8 c">8.learn</div> -->
+    </div>
+    <h2>2.Center(align items in center across Cross axis)</h2>
+    <div class="container1">
+      <div class="c1 c">1.HTML</div>
+      <div class="c2 c">2.HTML</div>
+      <div class="c3 c">3.CSS</div>
+      <div class="c4 c">4.ARE</div>
+      <div class="c5 c">5.AMAZING</div>
+      <div class="c6 c">6.LANGUAGES</div>
+      <!-- <div class="c7 c">7.to</div>
+      <div class="c8 c">8.learn</div> -->
+    </div>
+
+    <h2>3.flex end(pushed to bottom)</h2>
+    <div class="container2">
+      <div class="c1 c">1.HTML</div>
+      <div class="c2 c">2.HTML</div>
+      <div class="c3 c">3.CSS</div>
+      <div class="c4 c">4.ARE</div>
+      <div class="c5 c">5.AMAZING</div>
+      <div class="c8 c">8.learn</div>
+      <!-- <div class="c7 c">7.to</div>
+      <div class="c6 c">6.LANGUAGES</div> -->
+    </div>
+
+    <h2>4.flex-start(pushed to top)</h2>
+    <div class="container3">
+      <div class="c1 c">1.HTML</div>
+      <div class="c2 c">2.HTML</div>
+      <div class="c3 c">3.CSS</div>
+      <div class="c4 c">4.ARE</div>
+      <div class="c5 c">5.AMAZING</div>
+      <div class="c6 c">6.LANGUAGES</div>
+      <!-- <div class="c7 c">7.to</div>
+      <div class="c8 c">8.learn</div> -->
+    </div>
+    <h2>5.baseline(align flex items along their contents baseline)</h2>
+    <h3>
+      if contents and font size of items are same , then
+      <strong>flex-start = baseline</strong>
+    </h3>
+    <div class="container4">
+      <div class="cd1 c">1.HTML</div>
+      <div class="cd2 c">2.HTML</div>
+      <div class="cd3 c">3.CSS</div>
+      <div class="cd4 c">4.ARE</div>
+      <div class="cd5 c">5.AMAZING</div>
+      <div class="cd6 c">6.LANGUAGES</div>
+      <!-- <div class="c7 c">7.to</div>
+      <div class="c8 c">8.learn</div> -->
+    </div>
+  </body>
+</html>

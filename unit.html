@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      .parent {
+        width: 500px;
+        border: solid purple 2px;
+        /* margin: 100px auto; */
+      }
+      .px {
+        width: 100px;
+        border: solid 2px black;
+        background-color: aqua;
+      }
+      .pt {
+        width: 100%;
+        border: dashed 2px red;
+        background: yellow;
+      }
+      .vw {
+        width: 100vw;
+        height: 50vh;
+        border: dotted 2px green;
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- The absolute length units are fixed and a length expressed in any of these will appear as exactly that size. -->
+    <!-- Pixels are the smallest unit in a digital display. This measurement is used to make sure a given element will display as the same size no matter what screen resolution views it.
+    ich makes sure that objects on a page will be the same size no matter the screen.  -->
+    <div class="parent">
+      <p class="vw">this view width</p>
+      <p class="px">this is px unit</p>
+      <p class="pt">this is percentage unit</p>
+    </div>
+    <h2>rem and em</h2>
+    <div>
+      <p>rem = relative to root font size</p>
+    </div>
+  </body>
+</html>
